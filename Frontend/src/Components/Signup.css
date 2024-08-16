@@ -1,0 +1,50 @@
+/* Signup.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.form-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+video.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure video covers the area */
+    z-index: -1; /* Ensure the video is behind the content */
+}
+
+.form-container-content {
+    position: relative;
+    z-index: 1; /* Ensure the form is above the video */
+    width: 100%;
+    max-width: 520px; /* Adjust as needed */
+    margin-left: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    background:transparent; /* Optional: semi-transparent background for form */
+    border-radius: 8px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}

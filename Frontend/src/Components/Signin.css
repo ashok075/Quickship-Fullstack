@@ -1,0 +1,84 @@
+
+/* Signin.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.signin-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+video.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure the video is behind the content */
+}
+
+.form-containerr {
+    position: relative;
+    z-index: 1; /* Ensure the form is above the video */
+    width: 100%;
+    max-width: 520px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background:transparent(255, 255, 255, 0.8); /* Optional: semi-transparent background for form */
+    border-radius: 8px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    border: 1px 0 1px 1px solid black;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7vh;
+}
+
+form input {
+  transition:0.1s;
+    outline: none;
+    border: 1px solid rgb(218, 218, 218);
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.442);
+}
+
+form button {
+    width: 70%;
+    color: white;
+    background-color: rgb(36, 140, 166);
+    border: none;
+    padding: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media(min-width:800px) {
+    form {
+        width: 550px;
+    }
+}
+
+form span {
+    color: red;
+    font-family: sans-serif;
+    display: none;
+}
